@@ -10,6 +10,40 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/cayman.css">
 </head>
+<style>
+    ul {
+        display: inline-flex;
+    }
+    
+    li {
+        list-style-type: none;
+        padding: 10px;
+    }
+    
+    .large {
+        position: absolute;
+        left: -9999px;
+    }
+    
+    li:hover .large {
+        left: 25%;
+        top: 50%;
+        width: 50%;
+        display: relative;
+        transform: scale(1, 1);
+        transform-origin: 0 0;
+    }
+    
+    .large-image {
+        border-radius: 4px;
+        box-shadow: 1px 1px 3px 3px rgba(127, 127, 127, 0.15);
+        ;
+    }
+    
+    li > img {
+        max-width: 40px;
+    }
+</style>
 
 <body>
     <section class="page-header">
@@ -20,28 +54,81 @@
 
     <section class="main-content">
 
-   <h1 id="m5---wireframe-and-landing-page" style="font-size:46px"><center>M3 - Wireframe and Landing Page</center></h1>
+        <h1 id="m5---wireframe-and-landing-page" style="font-size:46px"><center>M3 - Wireframe and Landing Page</center></h1>
         <hr/>
         </br>
 
-        <h2 id="m3---wireframe"><b>1. Wireframe</b></h2>
-        <hr />
-        <p><img src="img/Login.png" alt="Screenshot" />
-            <img src="img/Register.png" alt="Screenshot" />
-            <img src="img/Dashboard.png" alt="Screenshot" />
-            <img src="img/listTestsPlans.png" alt="Screenshot" />
-            <img src="img/newTestPlan.png" alt="Screenshot" />
-            <img src="img/listTestsSteps.png" alt="Screenshot" />
-            <img src="img/newTestStep.png" alt="Screenshot" />
-            <img src="img/runsHistory.png" alt="Screenshot" />
-            <img src="img/testOverview.png" alt="Screenshot" /></p>
-        <h2 id="m3---flow">Flow</h2>
-        <hr />
+        <h2 id="m3---wireframe"><b>1.1 Wireframe</b></h2>
+
+        <main>
+            <ul>
+                <li>
+                    <img src="img/Login.png" alt="Screenshot">
+                    <span class="large">
+    <img src="img/Login.png" class="large-image" alt="Screenshot" >
+  </span>
+                </li>
+                <li>
+                    <img src="img/Register.png" alt="Screenshot">
+                    <span class="large">
+    <img src="img/Register.png" class="large-image" alt="Screenshot" >
+  </span>
+                </li>
+                <li>
+                    <img src="img/Dashboard.png" alt="Screenshot">
+                    <span class="large">
+    <img src="img/Dashboard.png" class="large-image" alt="Screenshot" >
+  </span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="img/listTestsPlans.png" alt="Screenshot">
+                    <span class="large">
+    <img src="img/listTestsPlans.png" class="large-image" alt="Screenshot" >
+  </span>
+                </li>
+                <li>
+                    <img src="img/newTestPlan.png" alt="Screenshot">
+                    <span class="large">
+    <img src="img/newTestPlan.png" class="large-image" alt="Screenshot" >
+  </span>
+                </li>
+                <li>
+                    <img src="img/listTestsSteps.png" alt="Screenshot">
+                    <span class="large">
+    <img src="img/listTestsSteps.png" class="large-image" alt="Screenshot" >
+  </span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="img/newTestStep.png" alt="Screenshot">
+                    <span class="large">
+    <img src="img/newTestStep.png" class="large-image" alt="Screenshot" >
+  </span>
+                </li>
+                <li>
+                    <img src="img/runsHistory.png" alt="Screenshot">
+                    <span class="large">
+    <img src="img/runsHistory.png" class="large-image" alt="Screenshot" >
+  </span>
+                </li>
+                <li>
+                    <img src="img/testOverview.png" alt="Screenshot">
+                    <span class="large">
+    <img src="img/testOverview.png" class="large-image" alt="Screenshot" >
+  </span>
+                </li>
+            </ul>
+        </main>
+
+        <h2 id="m3---flow"><b>1.2 Flow</b></h2>
+
         <img src="img/flow.jpg" alt="Screenshot" /></p>
 
         <ul>
             <h2 id="m3---landing"><b>2. Landing page</b></h2>
-            <hr />
             <li><a href="https://autotestframework.github.io/Landing_page_Repo/">Check out our landing page</a></li>
         </ul>
 

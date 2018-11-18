@@ -17,6 +17,161 @@
         margin-right: auto;
         width: 50%;
     }
+    
+    .size {
+        width: 100%;
+    }
+    
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+    @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    .slider {
+        height: 700px;
+        position: relative;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .slider__nav {
+        width: 12px;
+        height: 12px;
+        margin: 2rem 12px;
+        border-radius: 50%;
+        z-index: 10;
+        outline: 6px solid #ccc;
+        outline-offset: -6px;
+        box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .slider__nav:checked {
+        -webkit-animation: check 0.4s linear forwards;
+        animation: check 0.4s linear forwards;
+    }
+    
+    .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+        left: 0%;
+    }
+    
+    .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+        left: -100%;
+    }
+    
+    .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+        left: -200%;
+    }
+    
+    .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+        left: -300%;
+    }
+    
+    .slider__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400%;
+        height: 50%;
+        -webkit-transition: left 0.4s;
+        transition: left 0.4s;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    }
+    
+    .slider__contents {
+        height: 100%;
+        padding: 2rem;
+        text-align: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    .slider__image {
+        font-size: 2.7rem;
+        color: #2196F3;
+        width: 50%;
+        height: 50%;
+    }
+    
+    .slider__caption {
+        margin: 2rem 0 1rem;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+    }
+    
+    .slider__txt {
+        color: #999;
+        margin-bottom: 3rem;
+        min-width: 300px;
+    }
+    
+    @-webkit-keyframes check {
+        100% {
+            outline-color: #333;
+            box-shadow: 0 0 0 1000px #333, 0 0 0 3600px rgba(51, 51, 51, 0.2);
+        }
+        100% {
+            outline-color: #333;
+            box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+        }
+    }
+    
+    @keyframes check {
+        100% {
+            outline-color: #333;
+            box-shadow: 0 0 0 1000px #333, 0 0 0 1000px rgba(51, 51, 51, 0.2);
+        }
+        100% {
+            outline-color: #333;
+            box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+        }
+    }
 </style>
 
 <body>
@@ -34,19 +189,101 @@
 
         <h2 id="m5---wireframe"><b>1. Add a lead collection section to your landing page</b></h2></br>
 
-        <p><li>To get in touch with potential customers, we used <a href="https://formspree.io/"><b><i>Formspree</i></b></a> to make the subscribtion option:</p></li>
+        <p>
+            <li>To get in touch with potential customers, we used <a href="https://formspree.io/"><b><i>Formspree</i></b></a> to make the subscribtion option:</p>
+        </li>
         <p style="text-align:center"><i>The subscription is available on <a href="https://autotestframework.github.io/Landing_page_Repo/">ATF Landing Page</a></i></p>
 
-                <p><img src="img/subscribe.PNG" class="center" alt="Screenshot" /></p></br>
+        <div class="slider">
+            <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+            <input type="radio" name="slider" title="slide2" class="slider__nav" />
+            <input type="radio" name="slider" title="slide3" class="slider__nav" />
+            <input type="radio" name="slider" title="slide4" class="slider__nav" />
+            <div class="slider__inner">
+                <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
+                    <h2 class="slider__caption"><img src="img/form0.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Subscription option on our Landing Page:
+                        <p>We collected <u>19 subscribers</u> and we plan to achieve more:</p>
+                    </p>
+                </div>
+                <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
+                    <h2 class="slider__caption"><img src="img/form1.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Submissions received on email</p>
+                </div>
+                <div class="slider__contents"><i class="slider__image fa fa-television"></i>
+                    <h2 class="slider__caption"><img src="img/form2.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Subscription option on Fiki Page</p>
+                </div>
+                <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+                    <h2 class="slider__caption"><img src="img/new_form.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Receiving lots of positive reviews from users</p>
+                </div>
+            </div>
+        </div>
 
-        <p><li>We collected <u>19 subscribers</u> and we plan to achieve more:</p></li>
+        <h2 id="m5---landing"><b>2. Add analytics on your landing page</b></h2></br>
 
-                <p><img src="img/submit.PNG" class="center" alt="Screenshot" /></p>
+        <p>
+            <li>We added <a href="https://analytics.google.com/analytics/web/"><b><i>Google Analytics</i></b></a> for tracking the number of visitors:</li>
+        </p>
 
-        <p><li>To collect feedback from users, we used <a href="https://www.hotjar.com/"><b><i>Hotjar</i></b></a>, which allowed us to create a feedback form:</p></li>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/hei1.PNG" alt="Screenshot" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/hei2.PNG" alt="Screenshot" /></p>
+        <div class="slider">
+            <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+            <input type="radio" name="slider" title="slide2" class="slider__nav" />
+            <input type="radio" name="slider" title="slide3" class="slider__nav" />
+            <input type="radio" name="slider" title="slide4" class="slider__nav" />
+            <div class="slider__inner">
+                <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
+                    <h2 class="slider__caption"><img src="img/pic.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Google Analytics: Real-Time Overview</p>
+                </div>
+                <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
+                    <h2 class="slider__caption"><img src="img/pic2.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Google Analytics: Behavior Overview</p>
+                </div>
+                <div class="slider__contents"><i class="slider__image fa fa-television"></i>
+                    <h2 class="slider__caption"><img src="img/pic3.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Google Analytics: Audience Overview</p>
+                </div>
+                <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+                    <h2 class="slider__caption"><img src="img/pic4.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Google Analytics: Acquisition Overview - Top Sources/Mediums</p>
+                </div>
+            </div>
+        </div>
 
-        <p><li>We created the feedback form in order to be able to respons to customer's needs:</p></li>
+        <p>
+            <li>We used <a href="https://www.hotjar.com/"><b><i>Hotjar</i></b></a> to analyse click-maps and user recordings:</li>
+        </p>
+
+        <div class="slider">
+            <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+            <input type="radio" name="slider" title="slide2" class="slider__nav" />
+            <input type="radio" name="slider" title="slide3" class="slider__nav" />
+            <input type="radio" name="slider" title="slide4" class="slider__nav" />
+            <div class="slider__inner">
+                <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
+                    <h2 class="slider__caption"><img src="img/heat1.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Hotjar: Recordings</p>
+                </div>
+                <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
+                    <h2 class="slider__caption"><img src="img/heat2.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Hotjar: Heatmap - 95 Clicks recorded</p>
+                </div>
+                <div class="slider__contents"><i class="slider__image fa fa-television"></i>
+                    <h2 class="slider__caption"><img src="img/heat3.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Hotjar: Incoming Feedback</p>
+                </div>
+                <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+                    <h2 class="slider__caption"><img src="img/heat4.png" class="size" alt="Screenshot" /></h2>
+                    <p class="slider__txt">Hotjar: Positive reviews</p>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <li>To collect feedback from users, we used <a href="https://www.hotjar.com/"><b><i>Hotjar</i></b></a>, which allowed us to create a feedback form. We created the feedback form in order to be able to respons to customer's needs:</p>
+        </li>
         <i><li>How did you find our site?</li>
         <li>If you could change anything on this page, what would you have us do?</li>
         <li>Is there anything on this page that doesn't work the way you expected it to?</li>
@@ -54,49 +291,11 @@
         <li>What other information would you like to see on this page?</li>
         <li>What could we do to make this site more useful?</li></i>
 
-        <h2 id="m5---landing"><b>2. Add analytics on your landing page</b></h2></br>
-
-         <p><li>We added <a href="https://analytics.google.com/analytics/web/"><b><i>Google Analytics</i></b></a> for tracking the number of visitors:</li></p>
-        <xmp>
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129175432-1"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-                gtag('js', new Date());
-
-                gtag('config', 'UA-129175432-1');
-            </script>
-        </xmp>
-
-         <p><li>We used <a href="https://www.hotjar.com/"><b><i>Hotjar</i></b></a> to analyse click-maps and user recordings:</li></p>
-
-        <xmp>
-            <!-- Hotjar Tracking Code for https://autotestframework.github.io/Landing_page_R -->
-            <script>
-                (function(h, o, t, j, a, r) {
-                    h.hj = h.hj || function() {
-                        (h.hj.q = h.hj.q || []).push(arguments)
-                    };
-                    h._hjSettings = {
-                        hjid: 1089685,
-                        hjsv: 6
-                    };
-                    a = o.getElementsByTagName('head')[0];
-                    r = o.createElement('script');
-                    r.async = 1;
-                    r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-                    a.appendChild(r);
-                })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-            </script>
-        </xmp>
-
         <h2 id="m5---landing"><b>3. Bring people on your landing page</b></h2></br>
 
-         <p><li>To reach out a relevant number of visitors, we posted on social platforms as Facebook & Linkedin:</li></p>
+        <p>
+            <li>To reach out a relevant number of visitors, we posted on social platforms as Facebook & Linkedin:</li>
+        </p>
 
         <code class="highlighter-rouge">Linkedin: https://www.linkedin.com/feed/update/urn:li:activity:6469451135097798656</code>
         <p><img src="img/linkedin.PNG" class="center" alt="Screenshot" /></p>
@@ -104,23 +303,19 @@
         <code class="highlighter-rouge">Facebook: https://www.facebook.com/alistar.andreea/posts/950599518466593</code>
         <p><img src="img/facebook.PNG" class="center" alt="Screenshot" /></p>
 
+        <h2 id="m5---landing"><b>Facebook versus Linkedin</i></b></h2> Out of the two social networks we've promoted our product on, the one that returned the best results was Facebook because it is the path to our closest friends and most relevant potential customers. Meanwhile, Linkedin offered less satisfactory results because our connections there are mostly interested in jobs or potential employees, and not in software products.
+
         <h2 id="m5---landing"><b>4. Document the entire lead generating campaign on your Fiki</b></h2>
 
-        <p><li>Using <a href="https://www.hotjar.com/"><b><i>Hotjar</i></b></a> we analysed the click-maps and user recordings:</li></p>
+        <p>
+            <li>Using <a href="https://www.hotjar.com/"><b><i>Hotjar</i></b></a> we analysed the click-maps and user recordings:</li>
+        </p>
 
         <p><img src="img/heatmap.jpg" class="center" alt="Screenshot" /></p>
 
-        <p><li>We can conclude that the main sections most liked by users are: <b>the customers feedback</b>, <b>the section where we summarized why you should use our product</b> and <b>the subscription option</b>!</li></p>
-
-        <p><img src="img/hotjar3.PNG" class="center" alt="Screenshot" /></p>
-
-        <p><li>We had a total of <u>57 clicks recorded</u>, where the most liked section was: <b>the customers feedback</b>.</li></p>
-
-        <p><img src="img/rec1.PNG" class="center" alt="Screenshot" /></p>
-        <p><img src="img/feedback.PNG" class="center" alt="Screenshot" /></p>
-
-        <p><img src="img/pic.png" class="center" alt="Screenshot" /></p>
-        <p><img src="img/pic2.png" class="center" alt="Screenshot" /></p>
+        <p>
+            <li>We can conclude that the main sections most liked by users are: <b>the customers feedback</b>, <b>the section where we summarized why you should use our product</b> and <b>the subscription option</b>!</li>
+        </p>
 
         <h2 id="m5---landing"><b>Hotjar versus Google Analytics: <i>People lie, data doesn't.</i></b></h2>
 
@@ -137,12 +332,8 @@
 
         <h4 id="m5---landing"><b>Google Analytics and HotJar: the winning combination</b></h4>
 
-        <li>We posted our landing page on relevant social networks (<b>Facebook</b> -  the place where most people spend their time and <b>Linkedin</b> -  the most accessible self-promotion platform for people with various interests and objectives) to reach a decent number of visitors;</li>
+        <li>We posted our landing page on relevant social networks (<b>Facebook</b> - the place where most people spend their time and <b>Linkedin</b> - the most accessible self-promotion platform for people with various interests and objectives) to reach a decent number of visitors;</li>
         <li>We find out when the user <b>clicks + stays + navigates</b> (HotJar) and <b>converts</b> (Google Analytics)</li>
-
-        <h2 id="m5---landing"><b>Facebook versus Linkedin</i></b></h2>
-
-        Out of the two social networks we've promoted our product on, the one that returned the best results was Facebook because it is the path to our closest friends and most relevant potential customers. Meanwhile, Linkedin offered less satisfactory results because our connections there are mostly interested in  jobs or potential employees, and not in software products.
 
         <footer class="site-footer">
             <span class="site-footer-owner"><a href="https://autotestframework.github.io/All_you_need/">ATF's FiKi</a> is maintained by <a href="https://github.com/AutoTestFramework">AutoTestFramework</a>.<span>

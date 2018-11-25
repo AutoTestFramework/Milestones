@@ -308,6 +308,20 @@ body {
          display: block;
     }
 }
+
+ .column1 {
+     float: left;
+     width: 50%;
+     margin-bottom: 26px;
+     padding: 0 8px;
+}
+ @media screen and (max-width: 650px) {
+     .column1 {
+         width: 100%;
+         display: block;
+    }
+}
+
  .card {
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

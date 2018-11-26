@@ -1,8 +1,10 @@
+*{
+    font-size: 14px;
+}
 body {
      padding: 0;
      margin: 0;
      font-family: 'Niramit', sans-serif;
-     font-size: 18px;
      line-height: 1.5;
      color: black;
      background-color: white;
@@ -178,7 +180,7 @@ body {
      padding: 0;
      margin: 0;
      font-size: 0.9rem;
-     color: #567482;
+     color: black;
      word-break: normal;
      white-space: pre;
      background: transparent;
@@ -201,7 +203,7 @@ body {
 }
  .main-content pre code, .main-content pre tt {
      display: inline;
-     max-width: initial;
+     width: 25%;
      padding: 0;
      margin: 0;
      overflow: initial;
@@ -212,6 +214,7 @@ body {
 }
  .main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
      content: normal;
+
 }
  .main-content ul, .main-content ol {
      margin-top: 0;
@@ -298,7 +301,7 @@ body {
 }
  .column {
      float: left;
-     width: 25%;
+     width: 50%;
      margin-bottom: 26px;
      padding: 0 8px;
 }
@@ -308,20 +311,6 @@ body {
          display: block;
     }
 }
-
- .column1 {
-     float: left;
-     width: 50%;
-     margin-bottom: 26px;
-     padding: 0 8px;
-}
- @media screen and (max-width: 650px) {
-     .column1 {
-         width: 100%;
-         display: block;
-    }
-}
-
  .card {
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -371,8 +360,8 @@ body {
     }
     
     .size {
-        width: 50%;
-        height: 30%;
+        width: 80%;
+        height: 50%;
     }
     
     @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
@@ -525,135 +514,12 @@ body {
         }
     }
 
-    .align-class {
-    text-align: center;
-    color: green;
-   }
-
-
-
-h3,h4{
-  font-size:50%;
-  font-weight:normal;
-}
-ul1,li1{
-  list-style:none;
-}
-ul1{
-  overflow:hidden;
-  padding:3em;
-}
-ul1 li1 a{
-  text-decoration:none;
-  color:#000;
-  background:#ffc;
-  display:block;
-  height:10em;
-  width:10em;
-  padding:1em;
-  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
-  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  -moz-transition:-moz-transform .15s linear;
-  -o-transition:-o-transform .15s linear;
-  -webkit-transition:-webkit-transform .15s linear;
-}
-ul1 li1{
-  margin:1em;
-  float:left;
-}
-ul1 li1 h3{
-  font-size:50%;
-  font-weight:bold;
-  padding-bottom:10px;
-}
-ul1 li1 h4{
-  font-family:"Reenie Beanie",arial,sans-serif;
-  font-size:50%;
-}
-ul1 li1 a{
-  -webkit-transform: rotate(-6deg);
-  -o-transform: rotate(-6deg);
-  -moz-transform:rotate(-6deg);
-}
-ul1 li1:nth-child(even) a{
-  -o-transform:rotate(4deg);
-  -webkit-transform:rotate(4deg);
-  -moz-transform:rotate(4deg);
-  position:relative;
-  top:5px;
-  background:#cfc;
-}
-ul1 li1:nth-child(3n) a{
-  -o-transform:rotate(-3deg);
-  -webkit-transform:rotate(-3deg);
-  -moz-transform:rotate(-3deg);
-  position:relative;
-  top:-5px;
-  background:#ccf;
-}
-ul1 li1:nth-child(5n) a{
-  -o-transform:rotate(5deg);
-  -webkit-transform:rotate(5deg);
-  -moz-transform:rotate(5deg);
-  position:relative;
-  top:-10px;
-}
-ul1 li1 a:hover,ul1 li1 a:focus{
-  box-shadow:10px 10px 7px rgba(0,0,0,.7);
-  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
-  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  -o-transform: scale(1.25);
-  position:relative;
-  z-index:5;
-}
-ol{text-align:center;}
-ol li1{display:inline;padding-right:1em;}
-ol li1 a{color:#fff;}
-
-   .container {
-      border: 2px solid #dedede;
-      background-color: #f1f1f1;
-      border-radius: 5px;
-      padding: 10px;
-      margin: 10px 0;
-      }
-      .darker {
-      border-color: #ccc;
-      background-color: #ddd;
-      }
-      .container::after {
-      content: "";
-      clear: both;
-      display: table;
-      }
-      .container img {
+        .myImage {
       float: left;
-      max-width: 60px;
-      width: 100%;
-      margin-right: 20px;
-      border-radius: 50%;
+      height: 40%;
+      width: 40%;
       }
-      .container img.right {
-      float: right;
-      margin-left: 20px;
-      margin-right: 0;
-      }
-      .time-right {
-      float: right;
-      color: #aaa;
-      }
-      .time-left {
-      float: left;
-      color: #999;
-      }
-      .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      .heading {
+      float:right;
       width: 50%;
       }
-
-      

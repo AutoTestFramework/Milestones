@@ -4,7 +4,6 @@
       <meta charset="UTF-8">
       <title>Milestone 2</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="theme-color" content="#157878">
       <link rel="stylesheet" href="css/normalize.css">
       <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
       <link rel="stylesheet" href="css/cayman.css">
@@ -35,192 +34,194 @@
                <li>
                   There are two types of potential customers:
                   <ul>
-                     <li><strong>those who DO</strong></li>
-                     <li><strong>those who DON’T use automated testing frameworks (but have the need to)</strong></li>
+                     <li><b>those who DO</b></li>
+                     <li><b>those who DON’T use automated testing frameworks (but have the need to)</b></li>
                   </ul>
                </li>
                <li>Explain our proposed solutions to both types of customers and gather feedback. For customers who already use an automated testing framework, see which ones are willing to migrate from an existing platform and learn why others won’t (what the reasons are, what features they’re not willing to give up on etc.)</li>
             </ul>
             <h2><b>Describe the process in detail:</b></h2>
-            <h2>4.1 How you identified your customer segment/s?</h2>
+            <p><i>How you identified your customer segment/s?</i></p>
             <ul>
                <li>The main customers will be the big companies that develop web applications because they spend a lot of time for testing. Any modification to an application requires a complete regression testing of the entire application to see if any other sections of the applications have been affected.</li>
                <li>At the same time, this testing process should be done as quickly as possible to make changes in production to repair some bugs or to bring new features. The solution for these companies would be to automate this process by writing automated tests and running them quickly on an infrastructure that our application will provide.</li>
             </ul>
-            <h2>4.2 How you reached them, how you collected information from them? Include the questions that you asked and all of your findings.</h2>
+            <p><i>How you reached them, how you collected information from them? Include the questions that you asked and all of your findings.</i></p>
             <ul>
-               <li>To interact with potential clients we decided to be in contact with companies interested in this topic, so we looked after representatives of the participating companies but also partners of the “ROMANIAN TESTING CONFERENCE” - <a href="https://romaniatesting.ro">Romania_Testing_Conference</a>, which takes place annually in Cluj, last year. We saw that our idea represents an interest for certain categories on the current market!</li>
+               <li>To interact with potential clients we decided to be in contact with companies interested in this topic, so we looked after representatives of the participating companies but also partners of the <a href="https://romaniatesting.ro">Romania_Testing_Conference</a>, which takes place annually in Cluj, last year. We saw that our idea represents an interest for certain categories on the current market!</li>
                <li>Using Google Forms, we have created an online survey (with 9 questions) that was distributed to developers/testers within interested companies: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfibey92Iiv6dQyhn6W_fFrSSLx5lPOWiEQT81tvh_lGo9Fww/viewform">Survey_Automated_Testing_Framework</a>. The questionnaire was completed by 27 people, 90% of them being part of the IT industry and using testing in day-to-day work.</li>
                <li>The survey included the following questions:</li>
             </ul>
-            <div class="language-markdown highlighter-rouge">
-               <div class="highlight">
-                  <pre class="highlight"><code><span class="gu">### 1. Do you, or your current team, possess enough technical skills to build and maintain test automation?</span>
-
-  • Yes (63%)
-  • Partially (25.9%)
-  • No (11.1%)
-
-          <p><img src="img/sur1.png" class="center" alt="Screenshot" />
-
-</code></pre>
-               </div>
+            <img src="img/sur1.png" class="myImage"/>
+            </br><div class="heading">
+              <pre class="highlight"><code>### 1. Do you, or your current team, possess enough technical skills to build and maintain test automation?
+              <ul><li>Yes (63%)
+              <li>Partially (25.9%)
+              <li>No (11.1%)</li></ul></code>
+              </pre>
             </div>
-            <p><code class="highlighter-rouge">Conclusion:</code> 63% responded that they have enough technical skills to build and maintain test automation. We think this is a good result for us because now we know that the majority of teams are using automated testing and we can propose them a solution to optimize and to reduce the time needed to maintain the testing process. Even if they concluded that they posses enough technical skills to be able to build and maintan test automation, we can’t be sure of that. Three levels of skills are required:</p>
+            </br></br></br></br></br></br></br></br></br></br></br></br>
+            <p style="color:#001f3f"><b>Conclusion:63% responded that they have enough technical skills to build and maintain test automation. We think this is a good result for us because now we know that the majority of teams are using automated testing and we can propose them a solution to optimize and to reduce the time needed to maintain the testing process. Even if they concluded that they posses enough technical skills to be able to build and maintan test automation, we can’t be sure of that. Three levels of skills are required:</b></p>
             <ul>
                <li>Organizing and creating GOOD + MEANINGFUL + EFFECTIVE tests</li>
                <li>Running and maintaining test suites created (knowledge of the automation tool)</li>
                <li>Automating the tests in the automation tool (knowledge of the tool and the language used in authoring the tests in that tool)</li>
             </ul>
-            <div class="language-markdown highlighter-rouge">
-               <div class="highlight">
-                  <pre class="highlight"><code><span class="gu">### 2. How do you run the automated tests:</span>
-
-  • In an application developed in-house (25.9%)
-  • In a commercial application (25.9%)
-  • Locally on your PC / Laptop (29.9%)
-  • Otherwise (18.5%)
-            <p><img src="img/sur2.png" class="center" alt="Screenshot" />
-
-</code></pre>
+            <img src="img/sur2.png" class="myImage"/>
+            </br>
+            <div class="heading">
+               <div class="language-markdown highlighter-rouge">
+                  <div class="highlight">
+                     <pre class="highlight"><code><span class="gu">### 2. How do you run the automated tests:</span>
+                  • In an application developed in-house (25.9%)
+                  • In a commercial application (25.9%)
+                  • Locally on your PC / Laptop (29.9%)
+                  • Otherwise (18.5%)
+                  </code></pre>
+                  </div>
                </div>
             </div>
-            <p><code class="highlighter-rouge">Conclusion:</code> 25.9% use in-house developed application, respectively theirs PC / Laptop and don’t use commercial applications. We can conclude that current applications available on market aren’t good enough or are too expensive. If our product will offer great features and will be available for an attractive price, we can motivate this category of developers to use our solution.</p>
-            <div class="language-markdown highlighter-rouge">
-               <div class="highlight">
-                  <pre class="highlight"><code><span class="gu">### 3. How often do you run automated tests:</span>
-
-  • Daily (48.1%)
-  • Several times a week (14.8%)
-  • Several times a month (37%)
-
-            <p><img src="img/sur3.png" class="center" alt="Screenshot" />
-
-</code></pre>
+            </br></br></br></br></br></br></br></br></br>
+            <p style="color:#001f3f"><b>Conclusion: 25.9% use in-house developed application, respectively theirs PC / Laptop and don’t use commercial applications. We can conclude that current applications available on market aren’t good enough or are too expensive. If our product will offer great features and will be available for an attractive price, we can motivate this category of developers to use our solution.</b></p>
+            <img src="img/sur3.png" class="myImage"/>
+            </br>
+            <div class="heading">
+               <div class="language-markdown highlighter-rouge">
+                  <div class="highlight">
+                     <pre class="highlight"><code><span class="gu">### 3. How often do you run automated tests:</span>
+                  • Daily (48.1%)
+                  • Several times a week (14.8%)
+                  • Several times a month (37%)
+                  </code></pre>
+                  </div>
                </div>
             </div>
-            <p><code class="highlighter-rouge">Conclusion:</code> We can see that developers run tests often and a framework can greatly reduce the time for teams that are spending on testing and increase overall productivity.</p>
-            <div class="language-markdown highlighter-rouge">
-               <div class="highlight">
-                  <pre class="highlight"><code><span class="gu">### 4. What types of tests you run (multiple responses):</span>
-
-  • Api (51.9%)
-  • Smoke (25.9%)
-  • Acceptance (37%)
-  • Others (59.3%)
-
-            <p><img src="img/sur4.png" class="center" alt="Screenshot" />
-
-</code></pre>
+            </br></br></br></br></br></br></br></br></br>
+            <p style="color:#001f3f"><b>Conclusion: We can see that developers run tests often and a framework can greatly reduce the time for teams that are spending on testing and increase overall productivity.</b></p>
+            <img src="img/sur4.png" class="myImage"/>
+            </br></br>
+            <div class="heading">
+               <div class="language-markdown highlighter-rouge">
+                  <div class="highlight">
+                     <pre class="highlight"><code><span class="gu">### 4. What types of tests you run (multiple responses):</span>
+                • Api (51.9%)
+                • Smoke (25.9%)
+                • Acceptance (37%)
+                • Others (59.3%)
+                  </code></pre>
+                  </div>
                </div>
             </div>
-            <p><code class="highlighter-rouge">Conclusion:</code> Our product will cover the most popular types of tests including API, Smoke and Acceptance tests and will be useful for most developers.</p>
-            <div class="language-markdown highlighter-rouge">
-               <div class="highlight">
-                  <pre class="highlight"><code><span class="gu">### 5. HOW do you prefer to create tests and WHY?</span>
-
-  • Clicking in the interface (no programming skills required) (14.8%)
-  • Writing Code (better structure of tests, component reuse, creation of own logic, ...) (85.2%)
-
-            <p><img src="img/sur5.png" class="center" alt="Screenshot" />
-
-</code></pre>
+            </br></br></br></br></br></br></br></br></br></br>
+            <p style="color:#001f3f"><b>Conclusion: Our product will cover the most popular types of tests including API, Smoke and Acceptance tests and will be useful for most developers.</b></p>
+            <img src="img/sur5.png" class="myImage"/>
+            </br>
+            <div class="heading">
+               <div class="language-markdown highlighter-rouge">
+                  <div class="highlight">
+                     <pre class="highlight"><code><span class="gu">### 5. HOW do you prefer to create tests and WHY?</span>
+                • Clicking in the interface (no programming skills required) (14.8%)
+                  • Writing Code (better structure of tests, component reuse, creation of own logic, ...) (85.2%)
+                  </code></pre>
+                  </div>
                </div>
             </div>
-            <p><code class="highlighter-rouge">Conclusion:</code> Our solution will require writing code for creating tests and as we can see from the survey, this is the preferred method for developers to create tests.</p>
-            <div class="language-markdown highlighter-rouge">
-               <div class="highlight">
-                  <pre class="highlight"><code><span class="gu">### 6. In which language do you prefer to write tests:</span>
-
-  • Java (63%)
-  • Javascript (0%)
-  • Python (22.2%)
-  • PHP (0%)
-  • Other (14.8%)
-
-            <p><img src="img/sur6.png" class="center" alt="Screenshot" />
-
-</code></pre>
+            </br></br></br></br></br></br></br></br></br>
+            <p style="color:#001f3f"><b>Conclusion: Our solution will require writing code for creating tests and as we can see from the survey, this is the preferred method for developers to create tests.</b></p>
+            <img src="img/sur6.png" class="myImage"/>
+            </br>
+            <div class="heading">
+               <div class="language-markdown highlighter-rouge">
+                  <div class="highlight">
+                     <pre class="highlight"><code><span class="gu">### 6. In which language do you prefer to write tests:</span>
+                  • Java (63%)
+                  • Javascript (0%)
+                  • Python (22.2%)
+                  • PHP (0%)
+                  • Other (14.8%)
+                  </code></pre>
+                  </div>
                </div>
             </div>
-            <p><code class="highlighter-rouge">Conclusion:</code> In the first instance, we planned to use PHP language for writing tests, but after we have seen the survey results, we are seriously considering to add a new feature that will offer the possibility to select a language from several available to write tests including Java, Javascript and Python.</p>
-            <div class="language-markdown highlighter-rouge">
-               <div class="highlight">
-                  <pre class="highlight"><code><span class="gu">### 7. How useful do you consider the following features for you (with Useless, Useful, Very useful):</span>
-
-  • Running tests in serial/parallel
-    ○ Useless (2 persons), Useful (7 persons), Very useful (18 persons)
-  • Running defined tests via API
-    ○ Useless (1 person), Useful (14 persons), Very useful (12 persons)
-  • Running testing plans on Schedule
-    ○ Useless (3 persons), Useful (12 persons), Very useful (12 persons)
-  • Running tests on different operating systems
-    ○ Useless (5 persons), Useful (10 persons), Very useful (12 persons)
-  • Running tests on different browsers
-    ○ Useless (4 persons), Useful (15 persons), Very useful (8 persons)
-  • Running tests on different versions of browsers
-    ○ Useless (7 persons), Useful (11 persons), Very useful (9 persons)
-
-              <p><img src="img/sur7.png" class="center" alt="Screenshot" />
-
-</code></pre>
+            </br></br></br></br></br></br></br></br></br>
+            <p style="color:#001f3f"><b>Conclusion: In the first instance, we planned to use PHP language for writing tests, but after we have seen the survey results, we are seriously considering to add a new feature that will offer the possibility to select a language from several available to write tests including Java, Javascript and Python.</b></p>
+            <img src="img/sur7.png" class="myImage"/>
+            </br>
+            <div class="heading">
+               <div class="language-markdown highlighter-rouge">
+                  <div class="highlight">
+                     <pre class="highlight"><code><span class="gu">### 7. How useful do you consider the following features for you (with Useless, Useful, Very useful):</span>
+                • Running tests in serial/parallel
+                    ○ Useless (2 persons), Useful (7 persons), Very useful (18 persons)
+                  • Running defined tests via API
+                    ○ Useless (1 person), Useful (14 persons), Very useful (12 persons)
+                  • Running testing plans on Schedule
+                    ○ Useless (3 persons), Useful (12 persons), Very useful (12 persons)
+                  • Running tests on different operating systems
+                    ○ Useless (5 persons), Useful (10 persons), Very useful (12 persons)
+                  • Running tests on different browsers
+                    ○ Useless (4 persons), Useful (15 persons), Very useful (8 persons)
+                  • Running tests on different versions of browsers
+                    ○ Useless (7 persons), Useful (11 persons), Very useful (9 persons)
+                  </code></pre>
+                  </div>
                </div>
             </div>
-            <p><code class="highlighter-rouge">Conclusion:</code> As we can see, the developers consider the most of our features useful or very useful. This survey will help us prioritize some features and deliver them from the very beginning.</p>
-            <div class="language-markdown highlighter-rouge">
-               <div class="highlight">
-                  <pre class="highlight"><code><span class="gu">### 8. What is the one main benefit of test automation you expect to gain?</span>
-
-  •  More confidence in the released product (18.5%)
-  •  Higher product quality (33.3%)
-  •  Faster releases/meeting the schedule (22.2%)
-  •  More interesting job/skill than manual testing (3.7%)
-  •  Creating and automating tests helps everyone better understand the system under test (7.4%)
-  •  Show system consistency (3.7%)
-  •  Customers finding less bugs (3.7%)
-  •  Less support issues (3.7%)
-  •  Finding more bugs (3.7%)
-  •  None/no benefit (3.7%)
-
-            <p><img src="img/sur8.png" class="center" alt="Screenshot" />
-
-</code></pre>
+            </br></br></br></br></br></br></br></br></br></br></br></br></br>
+            <p style="color:#001f3f"><b>Conclusion: As we can see, the developers consider the most of our features useful or very useful. This survey will help us prioritize some features and deliver them from the very beginning.</b></p>
+            <img src="img/sur8.png" class="myImage"/>
+            </br>
+            <div class="heading">
+               <div class="language-markdown highlighter-rouge">
+                  <div class="highlight">
+                     <pre class="highlight"><code><span class="gu">### 8. What is the one main benefit of test automation you expect to gain?</span>
+                •  More confidence in the released product (18.5%)
+                  •  Higher product quality (33.3%)
+                  •  Faster releases/meeting the schedule (22.2%)
+                  •  More interesting job/skill than manual testing (3.7%)
+                  •  Creating and automating tests helps everyone better understand the system under test (7.4%)
+                  •  Show system consistency (3.7%)
+                  •  Customers finding less bugs (3.7%)
+                  •  Less support issues (3.7%)
+                  •  Finding more bugs (3.7%)
+                  •  None/no benefit (3.7%)
+                  </code></pre>
+                  </div>
                </div>
             </div>
-            <p><code class="highlighter-rouge">Conclusion:</code> As we thought, people expect from a testing framework to reduce the time needed for creating and running tests and to increase the overall product quality by increasing the code coverage. We’ll try to optimize our product to be as simple and efficient as possible for creating tests and we’ll offer features as scalability and parallel testing to reduce the testing time.</p>
+            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+            <p style="color:#001f3f"><b>Conclusion: As we thought, people expect from a testing framework to reduce the time needed for creating and running tests and to increase the overall product quality by increasing the code coverage. We’ll try to optimize our product to be as simple and efficient as possible for creating tests and we’ll offer features as scalability and parallel testing to reduce the testing time.</b></p>
             <div class="language-markdown highlighter-rouge">
                <div class="highlight">
                   <pre class="highlight"><code><span class="gu">###  What feature would you prefer implemented by default ? (considering some performance impact)</span>
-
-Answers:
-  •  It would be nice for an ATF to have a feature that tells you the code coverage for each test.
-  •  Multitasking used for isolated parallel testing.
-  •  .
-  •  Mobile view test
-  •  Running testing plans on Schedule
-  •  Have the ability to navigate easily between tests, run multiple tests in parallel.
-  •  Email notification
-  •  Intuitive API interface
-  •  Clear overview of the tests and results and charys
-  •  None
-  •  Possible hints to how certain bugs can be fixed (e.g. how Microsoft Excel gives clues to how to fix what it detects to be a wrong formula).
-  •  Mocking
-  •  context setup/destruction from code for each test
-  •  Dont understand the questiin
-  •  Run the tests in parallel.
-  •  N/A
-  •  Performance tracking/management
-  •  Don’t understand the question
-  •  Be able to see the stacks of records and be able to play back test cases
-  •  Less human interaction
-  •  Scalability
-  •  Running parallel tests
-  •  paralelismul
-  •  ALL OF THEM
-  •  Coverage
-  •  Paralel tests
-  •  Various smart templates.
-</code></pre>
+                  Answers:
+                    •  It would be nice for an ATF to have a feature that tells you the code coverage for each test.
+                    •  Multitasking used for isolated parallel testing.
+                    •  .
+                    •  Mobile view test
+                    •  Running testing plans on Schedule
+                    •  Have the ability to navigate easily between tests, run multiple tests in parallel.
+                    •  Email notification
+                    •  Intuitive API interface
+                    •  Clear overview of the tests and results and charys
+                    •  None
+                    •  Possible hints to how certain bugs can be fixed (e.g. how Microsoft Excel gives clues to how to fix what it detects to be a wrong formula).
+                    •  Mocking
+                    •  context setup/destruction from code for each test
+                    •  Dont understand the questiin
+                    •  Run the tests in parallel.
+                    •  N/A
+                    •  Performance tracking/management
+                    •  Don’t understand the question
+                    •  Be able to see the stacks of records and be able to play back test cases
+                    •  Less human interaction
+                    •  Scalability
+                    •  Running parallel tests
+                    •  paralelismul
+                    •  ALL OF THEM
+                    •  Coverage
+                    •  Paralel tests
+                    •  Various smart templates.</code></pre>
                </div>
             </div>
             <ul>
@@ -233,19 +234,19 @@ Answers:
                   </ul>
                </li>
             </ul>
-            <h2><b>5. Describe how these insights have affected your product (if in any way).</b></h2>
+            <h2><b>Describe how these insights have affected your product (if in any way).</b></h2>
             <ul>
                <li>Complaints about performance on existing products made us decide that special features have to be offered as plugins, instead of being included in the base product, so that the end product would be simple, fast and limited to basic needs, but also feature-filled if necessary. Customers not already using such a framework also wished for fast and simple way to test their applications, without unnecessary complications.</li>
             </ul>
-            <h2><b>6. Do you consider that you are ready to move to the Customer Validation stage (to test selling)? Provide arguments.</b></h2>
+            <h2><b>Do you consider that you are ready to move to the Customer Validation stage (to test selling)? Provide arguments.</b></h2>
             <ul>
                <li>Considering that we’ve covered all complaints about other existing solutions regarding Automated Testing Frameworks and that most customers are happy with our other proposals, we’re ready to move on to the next stage!!!</li>
             </ul>
          </div>
-         <h2>Our happy customers:</h2>
+         <h2 id="happy-customers">Our happy customers:</h2>
          <p><img src="img/happy_customers.png" class="center" alt="Screenshot" /></p>
          <footer class="site-footer">
-            <span class="site-footer-owner"><a href="https://autotestframework.github.io/Fikipage_ATF/">ATF's FiKi</a> is maintained by <a href="https://github.com/AutoTestFramework">AutoTestFramework</a>.<span>
+            <span class="site-footer-owner"><a href="https://autotestframework.github.io/Fikipage_ATF/">ATF's FiKi</a> is maintained by <a href="https://github.com/AutoTestFramework">AutoTestFramework</a>.</span>
             <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
          </footer>
       </section>

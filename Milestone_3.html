@@ -23,7 +23,6 @@
       }
       li:hover .large {
       left: 25%;
-      top: 50%;
       width: 50%;
       display: relative;
       transform: scale(1, 1);
@@ -37,6 +36,24 @@
       li > img {
       width: 50%;
       }
+      .column1 {
+      width: 50%;
+      padding: 60px;
+      height: 600px;
+      }
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      @media screen and (max-width: 600px) {
+      .column1 {
+      width: 100%;
+      }
+      }
+      .aligncenter {
+      text-align: center;
+      }
    </style>
    <body>
       <section class="page-header">
@@ -47,79 +64,160 @@
          <a href="https://autotestframework.github.io/Fikipage_ATF/" class="btn">View Fiki page</a>
          <a href="https://autotestframework.github.io/Landing_page_Repo/team.html" class="btn">Members</a>
       </section>
+      <br>
       <section class="main-content">
-         <h2><b>Wireframe</b></h2>
-         <main>
-            <ul>
+         <h1>Wireframe</h1>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>Login page</b></h2>
+               <br>
+               <main>
+               <ul>
                <li>
                   <img src="img/Login.png" style="width: 100%; height: 100%">
                   <span class="large">
                   <img src="img/Login.png" class="large-image" alt="Screenshot" >
                   </span>
                </li>
-               <li>
-                  <img src="img/Register.png" style="width: 100%; height: 100%">
-                  <span class="large">
-                  <img src="img/Register.png" class="large-image" alt="Screenshot" >
-                  </span>
-               </li>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <h2><b>Register page</b></h2>
+                  <br>
+                  <main>
+                  <ul>
+                  <li>
+                     <img src="img/Register.png" style="width: 100%; height: 100%">
+                     <span class="large">
+                     <img src="img/Register.png" class="large-image" alt="Screenshot" >
+                     </span>
+                  </li>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>Dashboard page</b></h2>
+               <br>
+               <main>
+               <ul>
                <li>
                   <img src="img/Dashboard.png" style="width: 100%; height: 100%">
                   <span class="large">
                   <img src="img/Dashboard.png" class="large-image" alt="Screenshot" >
                   </span>
                </li>
-            </ul>
-            <ul>
-               <li>
-                  <img src="img/listTestsPlans.png" style="width: 100%; height: 100%">
-                  <span class="large">
-                  <img src="img/listTestsPlans.png" class="large-image" alt="Screenshot" >
-                  </span>
-               </li>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <h2><b>listTestsPlans page</b></h2>
+                  <br>
+                  <main>
+                  <ul>
+                  <li>
+                     <img src="img/listTestsPlans.png" style="width: 100%; height: 100%">
+                     <span class="large">
+                     <img src="img/listTestsPlans.png" class="large-image" alt="Screenshot" >
+                     </span>
+                  </li>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>newTestPlan page</b></h2>
+               <br>
+               <main>
+               <ul>
                <li>
                   <img src="img/newTestPlan.png" style="width: 100%; height: 100%">
                   <span class="large">
                   <img src="img/newTestPlan.png" class="large-image" alt="Screenshot" >
                   </span>
                </li>
-               <li>
-                  <img src="img/listTestsSteps.png" style="width: 100%; height: 100%">
-                  <span class="large">
-                  <img src="img/listTestsSteps.png" class="large-image" alt="Screenshot" >
-                  </span>
-               </li>
-            </ul>
-            <ul>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <h2><b>listTestsSteps page</b></h2>
+                  <br>
+                  <main>
+                  <ul>
+                  <li>
+                     <img src="img/listTestsSteps.png" style="width: 100%; height: 100%">
+                     <span class="large">
+                     <img src="img/listTestsSteps.png" class="large-image" alt="Screenshot" >
+                     </span>
+                  </li>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>newTestStep page</b></h2>
+               <br>
+               <main>
+               <ul>
                <li>
                   <img src="img/newTestStep.png" style="width: 100%; height: 100%">
                   <span class="large">
                   <img src="img/newTestStep.png" class="large-image" alt="Screenshot" >
                   </span>
                </li>
-               <li>
-                  <img src="img/runsHistory.png" style="width: 100%; height: 100%">
-                  <span class="large">
-                  <img src="img/runsHistory.png" class="large-image" alt="Screenshot" >
-                  </span>
-               </li>
-               <li>
-                  <img src="img/testOverview.png" style="width: 100%; height: 100%">
-                  <span class="large">
-                  <img src="img/testOverview.png" class="large-image" alt="Screenshot" >
-                  </span>
-               </li>
-            </ul>
-         </main>
-         <h2><b>Flow</b></h2>
-         <center><img src="img/flow.jpg" style="width: 45%; height: 45%"/></center>
-         <h2><b>Landing page</b></h2>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <h2><b>runsHistory page</b></h2>
+                  <br>
+                  <main>
+                  <ul>
+                  <li>
+                     <img src="img/runsHistory.png" style="width: 100%; height: 100%">
+                     <span class="large">
+                     <img src="img/runsHistory.png" class="large-image" alt="Screenshot" >
+                     </span>
+                  </li>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+         <div class="column1" style="background-color: #f7f7f7;">
+            <h2><b>testOverview page</b></h2>
+            <br>
+            <main>
+            <ul>
+            <li>
+               <img src="img/testOverview.png" style="width: 100%; height: 100%">
+               <span class="large">
+               <img src="img/testOverview.png" class="large-image" alt="Screenshot" >
+               </span>
+            </li>
+         </div>
+         <div class="column1" style="background-color:white;">
+         <div style="display: inline-block; justify-content: center;">
+      </section>
+      <section class="main-content">
+         <h1>Flow</h1>
+      </section>
+      <center><img src="img/flow.jpg" style="width: 45%; height: 45%"/></center>
+      <section class="main-content">
+         <h1>Landing page</h1>
          <p><a href="https://autotestframework.github.io/Landing_page_Repo/">-> Check out our landing page</a></p>
+      </section>
+      <section class="main-content">
          <footer class="site-footer">
             <span class="site-footer-owner"><a href="https://autotestframework.github.io/Fikipage_ATF/">ATF's FiKi</a> is maintained by <a href="https://github.com/AutoTestFramework">AutoTestFramework</a>.<span>
             <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
          </footer>
-      </section>
       </section>
    </body>
 </html>

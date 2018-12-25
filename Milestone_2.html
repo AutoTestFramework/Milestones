@@ -5,9 +5,29 @@
       <title>Milestone 2</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/normalize.css">
-      <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
       <link rel="stylesheet" href="css/cayman.css">
+      <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
    </head>
+   <style>
+      .column1 {
+      width: 50%;
+      padding: 60px;
+      height: 600px;
+      }
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      @media screen and (max-width: 600px) {
+      .column1 {
+      width: 100%;
+      }
+      }
+      .aligncenter {
+      text-align: center;
+      }
+   </style>
    <body>
       <section class="page-header">
          <h1 class="project-name">M2 - Validation 1 (idea)</h1>
@@ -17,87 +37,227 @@
          <a href="https://autotestframework.github.io/Fikipage_ATF/" class="btn">View Fiki page</a>
          <a href="https://autotestframework.github.io/Landing_page_Repo/team.html" class="btn">Members</a>
       </section>
+      <br><br>
       <section class="main-content">
-         </br>
-         <h2><b>How you identified the problem?</b></h2>
-         <div>
-            <ul>
-               <li>Current solutions, while offering lots of features, also introduce a lot of overhead and complicated configurations. Much needed features like the ones proposed are never aggregated into one application(code versioning, cloud storage etc.). Graphical user interfaces are ambiguous due to the need of providing access to every feature;</li>
-            </ul>
-            <h2><b>What you thought is a solution for the problem?</b></h2>
-            <ul>
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>How you identified the problem?</b></h2>
+               <br>
+               <li>Current solutions, while offering lots of features, also introduce a lot of overhead and complicated configurations. Much needed features like the ones proposed are never aggregated into one application (code versioning, cloud storage etc.). Graphical user interfaces are ambiguous due to the need of providing access to every feature;</li>
+               <h2><b>What you thought is a solution for the problem?</b></h2>
+               <br>
                <li>An open-source application model, offering as much extensibility as possible and a freemium-based revenue (from plugins and cloud storage space) with the possibility of donations.</li>
                <li>The solution has to address the main problems: stick to the most necessary features, maintain a simple interface with great performance, offer plugins for special features.</li>
-            </ul>
-            <h2><b>Your plan for customer discovery (short overview before going into detail).</b></h2>
-            <ul>
-               <li>
-                  There are two types of potential customers:
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <h2><b>Your plan for customer discovery (short overview before going into detail)</b></h2>
+                  <br>
                   <ul>
-                     <li><b>those who DO</b></li>
-                     <li><b>those who DON’T use automated testing frameworks (but have the need to)</b></li>
+                     <li>
+                        There are two types of potential customers:
+                        <ul>
+                           <li><b>those who DO</b></li>
+                           <li><b>those who DON’T use automated testing frameworks (but have the need to)</b></li>
+                        </ul>
+                     </li>
+                     <li>Explain our proposed solutions to both types of customers and gather feedback. For customers who already use an automated testing framework, see which ones are willing to migrate from an existing platform and learn why others won’t (what the reasons are, what features they’re not willing to give up on etc.)</li>
                   </ul>
-               </li>
-               <li>Explain our proposed solutions to both types of customers and gather feedback. For customers who already use an automated testing framework, see which ones are willing to migrate from an existing platform and learn why others won’t (what the reasons are, what features they’re not willing to give up on etc.)</li>
-            </ul>
-            <h2><b>Describe the process in detail:</b></h2>
-            <p><i>How you identified your customer segment/s?</i></p>
-            <ul>
-               <li>The main customers will be the big companies that develop web applications because they spend a lot of time for testing. Any modification to an application requires a complete regression testing of the entire application to see if any other sections of the applications have been affected.</li>
-               <li>At the same time, this testing process should be done as quickly as possible to make changes in production to repair some bugs or to bring new features. The solution for these companies would be to automate this process by writing automated tests and running them quickly on an infrastructure that our application will provide.</li>
-            </ul>
-            <p><i>How you reached them, how you collected information from them? Include the questions that you asked and all of your findings.</i></p>
-            <ul>
-               <li>To interact with potential clients we decided to be in contact with companies interested in this topic, so we looked after representatives of the participating companies but also partners of the <a href="https://romaniatesting.ro">Romania_Testing_Conference</a>, which takes place annually in Cluj, last year. We saw that our idea represents an interest for certain categories on the current market!</li>
-               <li>Using Google Forms, we have created an online survey (with 9 questions) that was distributed to developers/testers within interested companies: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfibey92Iiv6dQyhn6W_fFrSSLx5lPOWiEQT81tvh_lGo9Fww/viewform">Survey_Automated_Testing_Framework</a>. The questionnaire was completed by 27 people, 90% of them being part of the IT industry and using testing in day-to-day work.</li>
-               <li>The survey included the following questions:</li>
-            </ul>
-            <center><img src="img/sur1.png" style="width: 45%; height: 45%"/></center>
-            <p style="float:none;"><b>Conclusion: 62.5% responded that they have enough technical skills to build and maintain test automation. We think this is a good result for us because now we know that the majority of teams are using automated testing and we can propose them a solution to optimize and to reduce the time needed to maintain the testing process. Even if they concluded that they posses enough technical skills to be able to build and maintan test automation, we can’t be sure of that. Three levels of skills are required:</b>
-            <ul>
-               <b><li>Organizing and creating GOOD + MEANINGFUL + EFFECTIVE tests</li>
-               <li>Running and maintaining test suites created (knowledge of the automation tool)</li>
-               <li>Automating the tests in the automation tool (knowledge of the tool and the language used in authoring the tests in that tool)</li></b>
-            </ul></p>
-            <center><img src="img/sur2.png" style="width: 45%; height: 45%"/></center>
-            <p style="float:none;"><b>Conclusion: 25.9% use in-house developed application, respectively theirs PC / Laptop and don’t use commercial applications. We can conclude that current applications available on market aren’t good enough or are too expensive. If our product will offer great features and will be available for an attractive price, we can motivate this category of developers to use our solution.</b></p>
-             <center><img src="img/sur3.png" style="width: 45%; height: 45%"/></center>
-            <p style="float:none;"><b>Conclusion: We can see that developers run tests often and a framework can greatly reduce the time for teams that are spending on testing and increase overall productivity.</b></p>
-            <center><img src="img/sur4.png" style="width: 45%; height: 45%"/></center>
-            <p style="float:none;"><b>Conclusion: Our product will cover the most popular types of tests including API, Smoke and Acceptance tests and will be useful for most developers.</b></p>
-            <center><img src="img/sur5.png" style="width: 45%; height: 45%"/></center>
-            <p style="float:none;"><b>Conclusion: Our solution will require writing code for creating tests and as we can see from the survey, this is the preferred method for developers to create tests.</b></p>
-            <center><img src="img/sur6.png" style="width: 45%; height: 45%"/></center>
-            <p style="float:none;"><b>Conclusion: In the first instance, we planned to use PHP language for writing tests, but after we have seen the survey results, we are seriously considering to add a new feature that will offer the possibility to select a language from several available to write tests including Java, Javascript and Python.</b></p>
-             <center><img src="img/sur7.png" style="width: 45%; height: 45%"/></center>
-            <p style="float:none;"><b>Conclusion: As we can see, the developers consider the most of our features useful or very useful. This survey will help us prioritize some features and deliver them from the very beginning.</b></p>
-             <center><img src="img/sur8.png" style="width: 45%; height: 45%"/></center>
-            <p style="float:none;"><b>Conclusion: As we thought, people expect from a testing framework to reduce the time needed for creating and running tests and to increase the overall product quality by increasing the code coverage. We’ll try to optimize our product to be as simple and efficient as possible for creating tests and we’ll offer features as scalability and parallel testing to reduce the testing time.</b></p>
-            <center><img src="img/sur9.png" style="width: 45%; height: 45%"/></center> 
-            <p style="float:none;"><b>Conclusions:
-                  <ul>
-                     <li>From the results obtained through this survey we realized that those interested in automated testing, runs tests locally on theirs PCs, so they could become potential users of our application. People who have an in-house framework will also choose our product.</li>
-                     <li>At the same time we found out that 48.1% do not run the tests every day, so they don’t use their infrastructure to the maximum of potential and could reduce costs by running tests in our application on-demand. We also determined that most of users prefer to write tests as code and the most used languages that our application should support. We also have the list of the most useful and wanted functionalities so we know how to prioritize them for a MVP.</li>
-                     <li>What people wanted from us? Higher confidence, increased quality, faster releases & System consistency from release to release (regression suites)</li>
-                  </ul>
-               </li>
-            </ul></b></p>
-            <h2><b>Describe how these insights have affected your product (if in any way).</b></h2>
-            <ul>
-               <li>Complaints about performance on existing products made us decide that special features have to be offered as plugins, instead of being included in the base product, so that the end product would be simple, fast and limited to basic needs, but also feature-filled if necessary. Customers not already using such a framework also wished for fast and simple way to test their applications, without unnecessary complications.</li>
-            </ul>
-            <h2><b>Do you consider that you are ready to move to the Customer Validation stage (to test selling)? Provide arguments.</b></h2>
-            <ul>
-               <li>Considering that we’ve covered all complaints about other existing solutions regarding Automated Testing Frameworks and that most potential customers are happy with our other proposals, we’re ready to move on to the next stage!!!</li>
-            </ul>
+               </div>
+            </div>
          </div>
-         <h2 id="happy-customers">Our happy customers:</h2>
-         <p><img src="img/customers.PNG" class="center" style="width: 45%; height: 45%"/></p>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>Describe the process in detail:</b></h2>
+               <br>
+               <p><i>How you identified your customer segment/s?</i></p>
+               <ul>
+                  <li>The main customers will be the big companies that develop web applications because they spend a lot of time for testing. Any modification to an application requires a complete regression testing of the entire application to see if any other sections of the applications have been affected.</li>
+                  <li>At the same time, this testing process should be done as quickly as possible to make changes in production to repair some bugs or to bring new features. The solution for these companies would be to automate this process by writing automated tests and running them quickly on an infrastructure that our application will provide.</li>
+               </ul>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <h2><b>Describe the process in detail:</b></h2>
+                  <br>
+                  <p><i>How you reached them, how you collected information from them? Include the questions that you asked and all of your findings.</i></p>
+                  <ul>
+                  <li>To interact with potential clients we decided to be in contact with companies interested in this topic, so we looked after representatives of the participating companies but also partners of the <a href="https://romaniatesting.ro">Romania_Testing_Conference</a>, which takes place annually in Cluj, last year. We saw that our idea represents an interest for certain categories on the current market!</li>
+                  <li>Using Google Forms, we have created an online survey (with 9 questions) that was distributed to developers/testers within interested companies: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfibey92Iiv6dQyhn6W_fFrSSLx5lPOWiEQT81tvh_lGo9Fww/viewform">Survey_Automated_Testing_Framework</a>. The questionnaire was completed by 27 people, 90% of them being part of the IT industry and using testing in day-to-day work.</li>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br><br>
+      
+      <section class="main-content">
+      <h1>The survey included the following questions:</h1>
+      </section>
+
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>1. Do you, or your current team, possess enough technical skills to build and maintain test automation?</b></h2>
+               <br>
+               Conclusion: 62.5% responded that they have enough technical skills to build and maintain test automation. We think this is a good result for us because now we know that the majority of teams are using automated testing and we can propose them a solution to optimize and to reduce the time needed to maintain the testing process. Even if they concluded that they posses enough technical skills to be able to build and maintan test automation, we can’t be sure of that. Three levels of skills are required:</b>
+               <ul>
+                  <b>
+                     <li>Organizing and creating GOOD + MEANINGFUL + EFFECTIVE tests</li>
+                     <li>Running and maintaining test suites created (knowledge of the automation tool)</li>
+                     <li>Automating the tests in the automation tool (knowledge of the tool and the language used in authoring the tests in that tool)</li>
+                  </b>
+               </ul>
+               </p>
+               <ul>
+                  <li>Cost of Software Failures Annually: <b>$1.1 Trillion lost</b> && <b>315.5 Lost years</b>;</li>
+                  <li>The current frameworks have limited features;</li>
+                  <li>Expensive for what if offers (license or subscription costs of commercial automation solutions);</li>
+               </ul>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><br><br><br><br><img src="img/sur1.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>2. How do you run the automated tests:</b></h2>
+               <br>
+               Conclusion: 25.9% use in-house developed application, respectively theirs PC / Laptop and don’t use commercial applications. We can conclude that current applications available on market aren’t good enough or are too expensive. If our product will offer great features and will be available for an attractive price, we can motivate this category of developers to use our solution.
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><br><br><br><br><img src="img/sur2.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>3. How often do you run automated tests:</b></h2>
+               <br>
+               Conclusion: We can see that developers run tests often and a framework can greatly reduce the time for teams that are spending on testing and increase overall productivity.
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><br><br><br><br><img src="img/sur3.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>4. What types of tests you run (multiple responses): </b></h2>
+               <br>
+               Conclusion: Our product will cover the most popular types of tests including API, Smoke and Acceptance tests and will be useful for most developers.
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><br><br><br><br><img src="img/sur4.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>5. HOW do you prefer to create tests and WHT?</b></h2>
+               <br>
+               Conclusion: Our solution will require writing code for creating tests and as we can see from the survey, this is the preferred method for developers to create tests.
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><br><br><br><br><img src="img/sur5.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>6. In which language do you prefer to write tests: </b></h2>
+               <br>
+               Conclusion: In the first instance, we planned to use PHP language for writing tests, but after we have seen the survey results, we are seriously considering to add a new feature that will offer the possibility to select a language from several available to write tests including Java, Javascript and Python.
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><br><br><br><br><img src="img/sur6.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>7. How useful do you consider the following features for you (with Useless, Useful, Very useful): </b></h2>
+               <br>
+               Conclusion: As we can see, the developers consider the most of our features useful or very useful. This survey will help us prioritize some features and deliver them from the very beginning.
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><br><br><br><br><img src="img/sur7.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>8. What is the one main benefit of test automation you expect to gain?</b></h2>
+               <br>
+               Conclusion: As we thought, people expect from a testing framework to reduce the time needed for creating and running tests and to increase the overall product quality by increasing the code coverage. We’ll try to optimize our product to be as simple and efficient as possible for creating tests and we’ll offer features as scalability and parallel testing to reduce the testing time.
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><br><br><br><br><img src="img/sur8.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>9. Which feature would you prefer implemented by default? (considering some performance impact)</b></h2>
+               <br>
+               <li>From the results obtained through this survey we realized that those interested in automated testing, runs tests locally on theirs PCs, so they could become potential users of our application. People who have an in-house framework will also choose our product.</li>
+               <li>At the same time we found out that 48.1% do not run the tests every day, so they don’t use their infrastructure to the maximum of potential and could reduce costs by running tests in our application on-demand. We also determined that most of users prefer to write tests as code and the most used languages that our application should support. We also have the list of the most useful and wanted functionalities so we know how to prioritize them for a MVP.</li>
+               <li>
+                  What people wanted from us? Higher confidence, increased quality, faster releases & System consistency from release to release (regression suites)
+            </div>
+            <div class="column1" style="background-color:white;">
+            <div style="display: inline-block; justify-content: center;">
+            <p class="aligncenter"><br><br><img src="img/sur9.png" style="width: 50%; height: 50%;" alt="centered image"/></p>
+            </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+      <div class="row">
+      <div class="column1" style="background-color: #f7f7f7;">
+      <h2><b>Describe how these insights have affected your product (if in any way)</b></h2><br>
+      <li>Complaints about performance on existing products made us decide that special features have to be offered as plugins, instead of being included in the base product, so that the end product would be simple, fast and limited to basic needs, but also feature-filled if necessary. Customers not already using such a framework also wished for fast and simple way to test their applications, without unnecessary complications.</li>
+      <h2><b>Do you consider that you are ready to move to the Customer Validation stage (to test selling)? Provide arguments</b></h2><br>
+      <li>Considering that we’ve covered all complaints about other existing solutions regarding Automated Testing Frameworks and that most potential customers are happy with our other proposals, we’re ready to move on to the next stage!!!</li>
+      </div>
+      <div class="column1" style="background-color:white;">
+      <div style="display: inline-block; justify-content: center;">
+      <p class="aligncenter"><br><br><img src="img/customers.PNG" style="width: 100%; height: 100%;" alt="centered image"/></p>
+      </div>
+      </div>
+      </div>
+      </section>
+      <section class="main-content">
          <footer class="site-footer">
-            <span class="site-footer-owner"><a href="https://autotestframework.github.io/Fikipage_ATF/">ATF's FiKi</a> is maintained by <a href="https://github.com/AutoTestFramework">AutoTestFramework</a>.</span>
+            <span class="site-footer-owner"><a href="https://autotestframework.github.io/Fikipage_ATF/">ATF's FiKi</a> is maintained by <a href="https://github.com/AutoTestFramework">AutoTestFramework</a>.<span>
             <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
          </footer>
-      </section>
       </section>
    </body>
 </html>

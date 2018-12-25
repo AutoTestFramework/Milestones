@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="css/cayman.css">
     <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
 </head>
+<style>
+  .column1 {
+  width: 50%;
+  padding: 60px;
+  height: 600px;
+  }
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  @media screen and (max-width: 600px) {
+  .column1 {
+  width: 100%;
+  }
+  }
+  .aligncenter {
+    text-align: center;
+}
+</style>
 <body>
     <section class="page-header">
         <h1 class="project-name">M1 - Fiki and Project Description</h1>
@@ -19,26 +39,7 @@
         <a href="https://autotestframework.github.io/Landing_page_Repo/team.html" class="btn">Members</a>
     </section>
 
-    <section class="main-content">
-        </br><h2><b>Why Automated Testing Framework Should Be Your Favorite Product Testing Tool?</b></h2>
-        <div>
-            <ul>
-                <li>ATF has a strong focus on <b>security</b>. Our team wants to ensure that all of our client's information is safe and secure.</li>
-                <li><b>Accessibility</b>: Browsers and devices are alaways available without waiting. All users need is an internet connection. The testing resouces are also built to scale to large teams or projects when needed.</li>
-                <li>Another plus for ATF is its <b>speed</b>: The process for live cross-browser / device testing is very quick. This is a common problem for other services since setting up devices for testing usually takes lots of time. But with ATF, we are able to test and update client sites with ease.</li>
-            </ul>
-            <p style ="text-align:center;"><i>With the Automated Test Framework (ATF), you create and run automated tests. When you modify a code, run tests to confirm that the instance still works as designed.</i></p>
-
-            <h2><b>ATF's Agile Team</b></h2>
-
-                <strong>What we want to achieve?</strong>
-                    <ul>
-                        <li>Test automation is living, breathing code and is developed to provide sanity checks for ever-changing production code. Building an automated testing framework can make your testing scalable, reliable, efficient, cost-effective and less brittle.</li>
-                    </ul>
-                </li>
-                <strong>What we need?</strong>
-                <p>The team needed an experienced understanding of software testing and QA to know how to achieve the right balance of manual, UI, integration (API) and unit tests. To achieve that, we create the <strong>AGILE team</strong>:</p></br></br></br>
-
+            <br><br><section class="main-content">
                 <div class="row">
                     <div class="column">
                         <div class="card">
@@ -88,146 +89,174 @@
                     </div>
                 </div>
         </div>
+    </section>
 
-        <h2><b>Describe the problem that you have noticed</b></h2>
-
-        <p style="text-align:center"><i>You would review <b>PRODUCTION</b> code, wouldn’t you? You should review test code, too.</i></p>
-
-        <ul>
-            <li>Tests are part of your product and your team need to design tests as a core feature of your product. The benefits of a stable build aren’t always measured using the classic of number of defects found.</li>
-            <li>If your organization is working with agile development methodologies, make sure automation is included in your definition of <strong>“done”</strong> just like any other functional requirement. Then you’ll move another step closer to DevOps.</li>
-            <li>We found that:
-                <ul>
-                    <u><li>Manual testing is a thing of the past;</li>
-                    <li>The current frameworks have limited features;</li>
-                    <li>Expensive for what if offers (license or subscription costs of commercial automation solutions);</li></u>
-                </ul>
-            </li>
-        </ul>
-
-        <h2><b>Our solutions proposed / value proposition</b></h2>
-
-        <ul>
-            <li>Reduce the work of manual testing (time savings + staff performance);</li>
-            <li>Earlier bugs identified before the users are impacted (spot smallest imperfections);</li>
-            <li>Easy management of the test cases;</li>
-            <li>Intuitive GUI that immediately shows <b>when</b>, <b>where</b> and <b>how</b> the execution failed;</li>
-            <li>Our solution is to build a framework to help make your test automation code: <i>Reusable + Maintainable + Stable</i></li>
-            <li>Benefits for our clients:
-                <ul>
-                    <li>Reduces the time and effort you need to spend on QA (minimal manual intervention) while providing quick feedback and expanding code coverage =&gt; better product</li>
-                    <li>Lower maintenace costs: if executed properly, introducing automation into your organization is worth the investment.</li>
-                    <li>Better Accesibility &amp; Performance &amp; Security;</li>
-                    <li>Mitigate RISK: Can help Stakeholders and POs better manage risk by addressing many of their concerns early in the process. Moreover, the cost of change to a system is greatly reduced by test automation, so it’s much easier when a bug fix or feature enhancement needs to be pushed to production. (production monitoring)</li>
-                    <li>Turnaround time</li>
-                    <li>Less tester fatigue (time-consuming)</li>
-                    <li>Decreased human error</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2><b>Customer segment/s</b></h2>
-
-        <ul>
-            <li>Corporate IT with complex software solutions;</li>
-            <li>Small and medium businesses which contribute with software to the bigger picture;</li>
-            <li>Freelancers / students working on software projects;</li>
-        </ul>
-
-        <h2><b>Competition</b></h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th style="text-align: center"> </th>
-                    <th style="text-align: center">Description</th>
-                    <th style="text-align: center">Starting price</th>
-                    <th style="text-align: center">Deployment</th>
-                    <th style="text-align: center">Training</th>
-                    <th style="text-align: center">Automated Testing Features</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="text-align: center"><strong>BrowserStack</strong></td>
-                    <td style="text-align: justify">A cross-browser testing tool to test responsive design.</td>
-                    <td style="text-align: justify">$12.50/month/user & Free Version</td>
-                    <td style="text-align: justify">Cloud, SaaS, Web</td>
-                    <td style="text-align: justify">Online</td>
-                      <td style="text-align: justify">
-                    Move & Copy</br>
-                    Requirements-Based Testing</br>
-                    Supports Parallel Execution</br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: center"><strong>Sauce Labs</strong></td>
-                    <td style="text-align: justify">Cloud-based automated testing platform enables developers and QEs to perform functional, JavaScript unit, and manual tests with Selenium or Appium on web and mobile apps.</td>
-                    <td style="text-align: justify">$19.00/month/user + Free Trial + Free Version</td>
-                    <td style="text-align: justify">Cloud, SaaS, Web</td>
-                    <td style="text-align: justify">Documentation / Webinars / In person</td>
-                    <td style="text-align: justify">
-                    Move & Copy</br>
-                    Requirements-Based Testing</br>
-                    Supports Parallel Execution</br>
-                    </td>
-                </tr>
-                    <tr>
-                    <td style="text-align: center"><strong>Browserling</strong></td>
-                    <td style="text-align: justify">Web based solution that lets you quickly cross-browser test your websites in all the most popular browsers.</td>
-                    <td style="text-align: justify">$19.00/month/user + Free Version + Trial (DEVELOPER, TEAM and PRO plans)</td>
-                    <td style="text-align: justify">Cloud, SaaS, Web</td>
-                    <td style="text-align: justify">Documentation / Live Online / In person</td>
-                    <td style="text-align: justify">
-                    Move & Copy</br>
-                    Requirements-Based Testing</br>
-                    Supports Parallel Execution</br>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2><b>Advantage over the competition</b></h2>
-
-        <ul>
-            <li><u>Cost</u>: open source + free license cost (actual products have expensive license or subscription costs)</li>
-            <li><u>Ease management of the test cases:</u></li>
+      <section class="main-content">
+        <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+                <h2><b>1 & 2. Why Automated Testing Framework Should Be Your Favorite Product Testing Tool?</b></h2><br>
+                <li><b>No More Writing Scripts</b>: No complicated training required. No complex test builders. No “live” test building. Real automation.</li>
+                <li><b>Avoid Costly Mistakes</b>: Manual QA is prone to errors that can cost millions. Diligently test your systems and find more bugs.</li>
+                <li><b>Simplify Testing</b>: Verify tests at a glance. ATF makes it easy to identify the path of each test.</li>
+                <li><b>Find Bugs Faster</b>: Run your tests simultaneously so you can get more done in less time.</li>
+                <li><b>Easily Maintain Tests</b>: Run and verify your tests. Teach ATF about your system and it will update tests for you.</li>
+                <li><b>Ensure Cross-Browser Consistency</b>: Support for testing in Chrome and Firefox. Compare browser screenshots.</li>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <h2><b>ATF's Agile Team</b></h2><br>
+                    <strong>What we want to achieve?</strong>
             <ul>
-                <li>Building and running automated tests & test suites</li>
-                <li>View test results</li>
-                <li>Identify and resolve client errors</li>
-                <li>Compare results and execution times for different automated test and suite results</li>
-                <li>Re-run failed tests in an automated test suite</li>
-                <li>Cancelling automated tests and test suites</li>
-                <li>Copy automated test</li>
+                <li>Test automation is living, breathing code and is developed to provide sanity checks for ever-changing production code. Building an automated testing framework can make your testing scalable, reliable, efficient, cost-effective and less brittle.</li>
             </ul>
-            <li><u>No advertising, no clutter</u>;</li>
-            <li><u>Fast support (24/7) available for our customers</u>;</li>
-            <li><u>Offer plugins for special features (the product will stick to the most necessary features);</u></li>
-            <li><u>Intuitive GUI that immediately shows <b>WHEN</b>, <b>WHERE</b> and <b>HOW</b> the execution failed; (actual products have GUI ambiguous due to the need of providing access to every feature)</li>
-        </ul>
+                </li>
+                <strong>What we need?</strong>
+                <p>The team needed an experienced understanding of software testing and QA to know how to achieve the right balance of manual, UI, integration (API) and unit tests.</p></br></br></br>
+            </div>
+            </div>
+        </section>
 
-        <h2><b>Key metrics</b></h2>
+        <section class="main-content">
+            <div class="row">
+                <div class="column1" style="background-color: #f7f7f7;">
+                    <h2><b>3. Describe the problem that you have noticed</b></h2><br>
+                    <p style="text-align:center"><i>You would review <b>PRODUCTION</b> code, wouldn’t you? You should review test code, too.</i></p>
+                    <ul>
+                        <li>Cost of Software Failures Annually: <b>$1.1 Trillion lost</b> && <b>315.5 Lost years</b>;</li>
+                        <li>The current frameworks have limited features;</li>
+                        <li>Expensive for what if offers (license or subscription costs of commercial automation solutions);</li>
+                    </ul>
+                </div>
+                <div class="column1" style="background-color:white;">
+                   <div style="display: inline-block; justify-content: center;">
+                       <p class="aligncenter"><br><br><br><br><img src="img/problem.png" style="width: 60%; height: 60%;" alt="centered image"/></p>
+                   </div>
+                </div>
+            </div>
+        </section>
 
-        <ul>
-            <li>Customer satisfaction;</li>
-            <li>Failure rates;</li>
-            <li>Server uptime;</li>
-            <li>Adoption rate;</li>
-            <li>Runtime test overhead;</li>
-        </ul>
-        <h2><b>Cost structure</b></h2>
+       <section class="main-content">
+            <div class="row">
+                <div class="column1" style="background-color: #f7f7f7;">
+                    <h2><b>4. Your solutions proposed / value proposition</b></h2><br>
+                    <li><b>Automated</b>: Framework that finds and builds tests for you (easy management of the test cases);</li>
+                    <li><b>Speed to deployment</b>: get the product to market 30% faster;</li>
+                    <li><b>Cost-effective</b>: 60% reduction in total QA costs;</li>
+                    <li><b>Productivity</b>: Up to 90% less development time for QA engineer;</li>
+                    <li><b>Intuitive GUI</b> that immediately shows <b>when</b>, <b>where</b> and <b>how</b> the execution failed;</li>
+                </div>
+                <div class="column1" style="background-color:white;">
+                   <div style="display: inline-block; justify-content: center;">
+                       <p class="aligncenter"><br><br><br><br><img src="img/solution.png" style="width: 60%; height: 60%;" alt="centered image"/></p>
+                   </div>
+                </div>
+            </div>
+        </section>
 
-        <ul>
-            <li>Marketplace for special plugins and features: storing tests in the cloud, scm for the tests, custom user intefaces;</li>
-            <li>A donation button will be available on the main download page (revenue is equally divided)</li>
-            <li>Google AdSense (for promoting)</li>
-        </ul>
+        <section class="main-content">
+            <div class="row">
+                <div class="column1" style="background-color: #f7f7f7;">
+                    <h2><b>5. Customer segment/s</b></h2><br>
+                    <li>Corporate IT with complex software solutions;</li>
+                    <li>Small and medium businesses with a web app or a complex website;</li>
+                    <li>Freelancers / students working on software projects;</li>
+                </div>
+                <div class="column1" style="background-color:white;">
+                   <div style="display: inline-block; justify-content: center;">
+                       <p class="aligncenter"><br><br><br><br><img src="img/customer.png" style="width: 60%; height: 60%;" alt="centered image"/></p>
+                   </div>
+                </div>
+            </div>
+        </section>
 
-        <h2><b>Revenue streams</b></h2>
+        <section class="main-content">
+            <div class="row">
+                <div class="column1" style="background-color: #f7f7f7;">
+                    <h2><b>6. Competition</b></h2><br>
+                    <div style="display: inline-block; justify-content: center;">
+                      <p class="aligncenter"><img src="img/competition2.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+                    </div>
+                </div>
+                <div class="column1" style="background-color:white;">
+                   <div style="display: inline-block; justify-content: center;">
+                      <p class="aligncenter"><img src="img/competition1.png" style="width: 100%; height: 100%;" alt="centered image"/></p>
+                   </div>
+                </div>
+            </div>
+        </section>
 
-        <ul>
-            <li>Donations;
+         <section class="main-content">
+            <div class="row">
+                <div class="column1" style="background-color: #f7f7f7;">
+                    <h2><b>7. Your advantage over the competition</b></h2><br>
+                    <li>Cost:</li>
+                        <ul>
+                            <li>$200 Per Test Search && $0.10 Per Test Run;</li>
+                            <li>Our smallest plan starts at $500/month and includes 2 discoveries and 1000 test. Plans average at ~$3.500/month. (Actual products have expensive license or subscription costs);</li>
+                        </ul>
+                    <li>Ease management of the test cases:</li>
+                    <ul>
+                        <li>Building and running automated tests & test suites</li>
+                        <li>View test results</li>
+                        <li>Identify and resolve client errors</li>
+                        <li>Compare results and execution times for different automated test and suite results</li>
+                        <li>Re-run failed tests in an automated test suite</li>
+                        <li>Cancelling automated tests and test suites</li>
+                        <li>Copy automated test</li>
+                    </ul>
+                        <li>No advertising, no clutter;</li>
+                        <li>Fast support (24/7) available for our customers;</li>
+                        <li>Offer plugins for special features (the product will stick to the most necessary features);</li>
+                        <li>Intuitive GUI that immediately shows <b>WHEN</b>, <b>WHERE</b> and <b>HOW</b> the execution failed; (actual products have GUI ambiguous due to the need of providing access to every feature)</li>
+                </div>
+                <div class="column1" style="background-color:white;">
+                   <div style="display: inline-block; justify-content: center;">
+                    <p class="aligncenter">
+                        <br><br><br><br><br><br><br><br><img src="img/advantage.png" style="width: 60%; height: 60%;" alt="centered image"/>
+                    </p>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="row">
+                <div class="column1" style="background-color: #f7f7f7;">
+                    <h2><b>8. Key metrics</b></h2><br>
+                    <li>Customer satisfaction;</li>
+                    <li>Failure rates;</li>
+                    <li>Server uptime;</li>
+                    <li>Adoption rate;</li>
+                    <li>Runtime test overhead;</li>
+                </div>
+                <div style="display: inline-block; justify-content: center;">
+                    <p class="aligncenter">
+                        <br><br><br><br><img src="img/key.png" style="width: 60%; height: 60%;" alt="centered image" />
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="row">
+                <div class="column1" style="background-color: #f7f7f7;">
+                    <h2><b>9. Cost structure</b></h2><br>
+                    <li>Marketplace for special plugins and features: storing tests in the CLOUD, SCM for the tests, custom user intefaces;</li>
+                    <li>A donation button will be available on the main download page (revenue is equally divided);</li>
+                    <li>Google AdSense (for promoting);</li>
+                </div>
+                <div style="display: inline-block; justify-content: center;">
+                    <p class="aligncenter">
+                        <br><br><br><br><img src="img/cost.png" style="width: 60%; height: 60%;" alt="centered image" />
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-content">
+        <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+                <h2><b>10. Revenue streams</b></h2><br>
+                <li>Donations;</li>
                 <ul>
                     <li><code class="highlighter-rouge">1$ - Ten hours of electricity for one developer PC!</code></li>
                     <li><code class="highlighter-rouge">5$ - One day webserver hosting!</code></li>
@@ -236,20 +265,27 @@
                     <li><code class="highlighter-rouge">50$ - 5% of one MS Visual Studio license!</code></li>
                     <li><code class="highlighter-rouge">$ - Of course, you can donate any amount you regard appropriate!</code></li>
                 </ul>
-            </li>
-            <li>Paid modules: Connect to DB, Connect to RabbitMQ, etc.;</li>
-            <li>Feature for running tests in parallel;</li>
-            <li>Feature for running tests in a specific environment (browser/OS);</li>
-            <li>Cloud storage space for the tests;</li>
-            <li>SCM feature for the tests;</li>
-        </ul>
-        <p style="text-align: center">We are going to sell the modules that we are going to implement for our product.</p>
-        </div>
+                <li>Paid modules: Connect to DB, Connect to RabbitMQ, etc.;</li>
+                <li>Feature for running tests in parallel;</li>
+                <li>Feature for running tests in a specific environment (browser/OS);</li>
+                <li>Cloud storage space for the tests;</li>
+                <li>SCM feature for the tests;</li>
+                <p style="text-align: center">We are going to sell the modules that we are going to implement for our product.</p>
+            </div>
+            <div class="column1" style="background-color:white;">
+                <div style="display: inline-block; justify-content: center;">
+                    <p class="aligncenter">
+                        <br><br><br><br><img src="img/revenue_streams.png" style="width: 60%; height: 60%;" alt="centered image" />
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+          <section class="main-content">
         <footer class="site-footer">
             <span class="site-footer-owner"><a href="https://autotestframework.github.io/Fikipage_ATF/">ATF's FiKi</a> is maintained by <a href="https://github.com/AutoTestFramework">AutoTestFramework</a>.<span>
             <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
         </footer>
-    </section>
     </section>
 
 </body>

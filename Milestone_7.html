@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <meta charset="UTF-8">
+      <title>Milestone 7</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/cayman.css">
+      <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+   </head>
+   <style>
+      .column1 {
+      width: 50%;
+      padding: 60px;
+      height: 750px;
+      }
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      @media screen and (max-width: 600px) {
+      .column1 {
+      width: 100%;
+      }
+      }
+      .aligncenter {
+      text-align: center;
+      }
+   </style>
+   <body>
+      <section class="page-header">
+         <h1 class="project-name">M7 - Minimum Viable Product - MVP</h1>
+         <h2 class="project-tagline"><i>Automate your UI QA testing by using ATF to find and write scripts.</i></h2>
+         <a href="https://github.com/AutoTestFramework/Milestones_Repo" class="btn">View the project on GitHub</a>
+         <a href="https://autotestframework.github.io/Landing_page_Repo/" class="btn">View Landing page</a>
+         <a href="https://autotestframework.github.io/Fikipage_ATF/" class="btn">View Fiki page</a>
+         <a href="https://autotestframework.github.io/Landing_page_Repo/team.html" class="btn">Members</a>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>Part 1: Customer Brief</b></h2>
+               <br> We start the MVP discovery session by a brief introduction to the idea, the vision and what makes this new ATF different from others in the marketplace.
+               <br>
+               <br> A. <b>Core audiences and what they care most in an app like this</b>
+               <li>Target Market: Small and medium businesses with a web app or a complex website</li>
+               <li>Speed to deployment: get the product to market 30% faster.</li>
+               <li>Cost-effective: 60% reduction in total QA costs.</li>
+               <li>Productivity: Up to 90% less development time for QA engineers.</li>
+               <br> B. <b>Market overview</b>:
+               <li>SaaS Online Strategy: We’re currently using our Beta to refine our usage-based pricing model by tracking customer habits.</li>
+               <li>Value Added Resellers: We plan to provide our software to web app dev shops that provide in-house QA for other companies.</li>
+               <li>Direct to Company: Personally connected sales fostered by involvement in the Romania tech community</li>
+               <br> C. <b>Platforms and support</b>
+               <li>Cross Browser Testing: Chrome & Firefox
+                  <br>
+                  <br> D. <b>App financials</b>
+               <li>$0.10 - Per Test Run</li>
+               <li>$200 - Test Search</li>
+               <li>Our smallest plan starts at $500/month and includes 2 discoveries and 1000 tests. Plans average at ~$3.500/month</li>
+               <br>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  E. <b>Goals:</b>
+                  <br>
+                  <li>fianancial, strategic, customer - related, market-share related</li>
+                  <br> F. <b>Creation of a freatures table</b>
+                  <br>
+                  <br> Based on <a href="https://autotestframework.github.io/Milestones_Repo/Milestone_2.html">Validation</a>, the customer needs are:
+                  <br>
+                  <br>
+                  <b>Feature 1</b>: Building and running automated tests/test suites
+                  <br>
+                  <b>Feature 2</b>: View test results
+                  <br>
+                  <b>Feature 3</b>: Identify and resolve client errors
+                  <br>
+                  <b>Feature 4</b>: Compare results and execution times for different automated test and suite results
+                  <br>
+                  <b>Feature 5</b>: Re-run failed tests in an automated test suite
+                  <br>
+                  <b>Feature 6</b>: Cancelling automated tests and test suites
+                  <br>
+                  <b>Feature 7</b>: Copy automated test
+                  <br>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>Part 2: MVP Features</b></h2>
+               <br>
+               <b>A. How important the feature is (1-10, 10 being most important)<br>
+               B. How soon the feature is desired (1-10, 10 being the soonest)<br>
+               C. How easy is to build the feature (1-10, 10 being the easiest to build)</b>
+               <br>
+               <br>
+               <br>
+               <br>
+               <table>
+                  <tr>
+                     <th>Features</th>
+                     <th>Importance</th>
+                     <th>Urgency</th>
+                     <th>Feasibility</th>
+                     <th>Total</th>
+                  </tr>
+                  <tr>
+                     <td>Feature 1</td>
+                     <td>9</td>
+                     <td>8</td>
+                     <td>9</td>
+                     <td>26</td>
+                  </tr>
+                  <tr>
+                     <td>Feature 2</td>
+                     <td>9</td>
+                     <td>8</td>
+                     <td>9</td>
+                     <td>26</td>
+                  </tr>
+                  <tr>
+                     <td>Feature 3</td>
+                     <td>10</td>
+                     <td>8</td>
+                     <td>7</td>
+                     <td>25</td>
+                  </tr>
+                  <tr>
+                     <td>Feature 4</td>
+                     <td>7</td>
+                     <td>5</td>
+                     <td>7</td>
+                     <td>19</td>
+                  </tr>
+                  <tr>
+                     <td>Feature 5</td>
+                     <td>8</td>
+                     <td>7</td>
+                     <td>9</td>
+                     <td>24</td>
+                  </tr>
+                  <tr>
+                     <td>Feature 6</td>
+                     <td>5</td>
+                     <td>5</td>
+                     <td>8</td>
+                     <td>18</td>
+                  </tr>
+                  <tr>
+                     <td>Feature 7</td>
+                     <td>7</td>
+                     <td>8</td>
+                     <td>7</td>
+                     <td>22</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><img src="img/customers.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>Part 3: App Flow</b></h2>
+               <br>
+               <br>
+               <br>
+               <br>
+               <p class="aligncenter"><img src="img/flow2.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><img src="img/flow.png" style="width: 70%; height: 80%;" alt="centered image" /></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>Part 4: Low-Fidelity Wireframes</b></h2>
+               <br>
+               <li>Easy data management;</li>
+               <br>
+               <li>Faster test execution;</li>
+               <br>
+               <li>Short and concise scenario;</li>
+               <br>
+               <li>2 steps to get to any point in the application process</li>
+               <br>
+               <li>No confusion where to look for;</li>
+               <br>
+               <li>Meaningful name of the components (be it a button, field or an error message);</li>
+               <br>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p class="aligncenter"><img src="img/listTestsPlans.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+                  <p class="aligncenter"><img src="img/testOverview.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>Part 5: MVP Development Roadmap</b></h2>
+               <br> ITERATION: once the MVP has been exposed to the users, it is time to measure again and check if the users are getting what they are expecting.
+               <br>
+               <br>
+               <b>1. Requirements: <a href="https://autotestframework.github.io/Milestones_Repo/Milestone_2.html">Validation</a></b>
+               <br>
+               <br>
+               <b>2. UX/UIX Designer: <a href="https://autotestframework.github.io/Milestones_Repo/Milestone_3.html">Wireframes</a></b>
+               <br>
+               <br>
+               <b>3. Build (MVP):</b> Implement
+               <br>
+               <br>
+               <b>4. Measure</b> (gather feedback and data): Demo
+               <br>
+               <br>
+               <b>5. Refine</b> (improve with better ideas): Test
+               <br>
+               <br>
+               <b>6. Prioritize the features</b>
+               <br>
+               <br>
+               <b>7. Developing minimum features through product sprints</b>
+               <br>
+               <br>
+               <b>8. Repeat</b> — Back to Build.
+               <br>
+               <h2><b>Report to: CEO</b></h2>
+               <b>• Output:</b> Prototypes
+               <br>
+               <br>
+               <b>• Methodology:</b> Agile
+               <br>
+               <br>
+               <b>• Product lifecycles:</b> Weeks
+               <br>
+               <br>
+               <b>• Decision-Making:</b> Data-Driven
+               <br>
+               <br>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p class="aligncenter"><img src="img/final.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>Team</b></h2>
+               <br> We are a team of thinkers and doers who are passionate about better QA.
+               <br>
+               <br> ATF was built with a singular purpose: to level the QA playing field by simplifying user interface testing. We wanted to bring large-scale testing capabilities to the masses; no matter what your size, budget, or technical expertise.
+               <br>
+               <br>
+               <b>A. Product Manager</b> (requirements from the users - create epics: define the user personas that will consume the product and how they are expecting to consume it)
+               <br>
+               <br>
+               <b>B. UX</b> (User Experience & Design) - work hand in hand with software engineers to build an appropriate interface and experience according to users' expectations.
+               <br>
+               <br>
+               <b>C. BIZ</b> (Business Analysis & Requirements)
+               <br>
+               <br>
+               <b>D. DEV</b> (Software Development)
+               <br>
+               <br>
+               <b>E. TEST</b> (Testing Quality Assurace)
+               <br>
+               <br>
+               <b>F. DEVOPS</b> (DevOps & Infrastructure Management)
+               <br>
+               <br>
+               <b>G. DB</b> (Database Development & Ops)
+               <br>
+               <br>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <p><img src="img/alistar.png" style="width: 30%; height: 30%;" alt="centered image" />Front-End Engineer</p>
+                  <br>
+                  <p><img src="img/andrei.png" style="width: 30%; height: 30%;" alt="centered image" />Full Stack + QA Engineer</p>
+                  <br>
+                  <p><img src="img/cirimpei.png" style="width: 30%; height: 30%;" alt="centered image" />Backend Architect + QA</p>
+                  <br>
+                  <p><img src="img/eugen.png" style="width: 30%; height: 30%;" alt="centered image" />Front-End Engineer</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <h1>Results for our MVP</h1>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+               <h2><b>What we have done:</b></h2>
+               <br> We used <b>2 virtual machines (1xCPU, 1GB RAM)</b> with CentOS, allocated in the cloud provided by <b>Microsoft Azure</b>. The first one for the application itself and the second one for the selenium grid.
+               <br>
+               <br> For the application, we used <b>Symfony framework</b> for the backend side, and <b>Boostrap</b> for the frontend. We stored all the data in a <b>PostgreSQL instance</b>.
+               <br>
+               <br> For the MVP, we developed the following features:
+               <br>
+               <br>
+               <i>A. Users are able to create test steps using simple Codeception commands:</i>
+               <br>
+               <br>
+               <li>$I->amOnUrl('http://site.com/login');</li>
+               <li>$I->fillField('username', 'davert');</li>
+               <li>$I->fillField('password', 'qwerty');</li>
+               <li>$I->click('LOGIN');</li>
+               <li>$I->see('Welcome, Davert!');</li>
+               <br>
+               <i>B. After creating basic tests, users can group them into test plans, having the ability to run both the created plans and each individual step.</i>
+               <br>
+               <br>
+               <i>C. We also have 2 pages for reporting and user can see a summary of all the tests run: for example, how long did the tests run, which browser they were running, the step they had failed, and screenshot of the page where the test failed.</i>
+               <br>
+               <br>
+               <i>D. We also have a reporting page where you can see how many tests have been run in the last week and rates of failures and passes.</i>
+               <br>
+               <br>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  To create the <b>Selenium grid</b>, we used the <b>Docker images</b> provided by Selenium. We currently use docker-compose to manage the containers, but we are planning to use kubernates to scale and distribute the containers on multiple machines. We currently have only <b>one node for the Firefox browser</b> and <b>one for the Chrome</b>, but the <b>grid can scale up very quickly</b> as we can create almost instantly new docker containers with the desired browsers.
+                  <br>
+                  <br>
+                  <h2><b>Future work:</b></h2>
+                  <br> As for further implementations, we aim to add:
+                  <br>
+                  <br>
+                  <li><b>ability to create teams to share existing tests with other users</b></li>
+                  <br>
+                  <br>
+                  <li><b>ability to create schedules to run tests automatically on a specific time</b></li>
+                  </li>
+                  <br>
+                  <br>
+                  <li><b>ability to import already written tests from a repository</b></li>
+                  <br>
+                  <br>.
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <div class="column1" style="background-color: #f7f7f7;">
+            <div class="row">
+               <h1>Sprint 1: &#10004</h1>
+               <h2 style="text-align: center"><b>Period: 25.11.2018 -> 06.12.2018</b></h2>
+               <h2 style="text-align: center"><b>Demo: Done</b></h2>
+               <br>
+               <ul1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want to have a test result reporting to be able to analyze quickly and accurately the test results.</h4>
+                     </a>
+                  </li1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want a cheap but effective application that the effort spent on design/developing and implementing the tests to be substantially less than the time spent on performing manual tests.</h4>
+                     </a>
+                  </li1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want a user-friendly, web-based GUI application that allows me for setting up test plans and managing and customizing test cases, without accessing the call centre for additional support.</h4>
+                     </a>
+                  </li1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want detailed performance testing summary reports displayed in graphs and charts to be able to analyze better the test results.</h4>
+                     </a>
+                  </li1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want to use minimal manual intervention for testing an application.</h4>
+                     </a>
+                  </li1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want a testing framework to be able to organize and manage all the files and to finish all the tasks in a systematic approach.</h4>
+                     </a>
+                  </li1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want to execute test cases to across the all supported browsers.</h4>
+                     </a>
+                  </li1>
+               </ul1>
+            </div>
+         </div>
+         <div class="column1" style="background-color:white;">
+         <div style="display: inline-block; justify-content: center;">
+         <div class="row">
+            <h1>Sprint 2: &#10004</h1>
+            <h2 style="text-align: center"><b>Period: 06.12.2018 -> 14.12.2018</b></h2>
+            <h2 style="text-align: center"><b>Demo: DONE</b></h2>
+            <br>
+            <ul1>
+               <li1>
+                  <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                     <h3>User</h3>
+                     <h4>As a user, I want to have more than a common language for tests.</h4>
+                  </a>
+               </li1>
+               <li1>
+                  <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                     <h3>User</h3>
+                     <h4>As a user, I want to run tests 24/7 because I want to see the results when I get back in the morning in the office.</h4>
+                  </a>
+               </li1>
+               <li1>
+                  <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                     <h3>User</h3>
+                     <h4>As a user, I want to use minimum programming skills for the framework.</h4>
+                  </a>
+               </li1>
+               <li1>
+                  <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                     <h3>User</h3>
+                     <h4>As a user, I want the testing requirements to be easy to understand and the application to not have a very complex workflow.</h4>
+                  </a>
+               </li1>
+               <li1>
+                  <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                     <h3>User</h3>
+                     <h4>As a user, I want to reduce the effort needed for detecting issues in the application and re-validate the test without any human intervention.</h4>
+                  </a>
+               </li1>
+            </ul1>
+         </div>
+     </div>
+      </section>
+      <section class="main-content">
+         <div class="column1" style="background-color: #f7f7f7;">
+            <div class="row">
+               <h1>Sprint 3: In progress</h1>
+               <h2 style="text-align: center"><b>Period: 14.12.2018 -> ?</b></h2>
+               <br>
+               <ul1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want to have ability to create teams to be able to share existing tests with other users.</h4>
+                     </a>
+                  </li1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want to have the ability to create schedules in order to run tests automatically on a specific time.</h4>
+                     </a>
+                  </li1>
+                  <li1>
+                     <a href="https://autotestframework.github.io/Landing_page_Repo/">
+                        <h3>User</h3>
+                        <h4>As a user, I want to have the ability to import already written tests from a repository for a better tracking of it.</h4>
+                     </a>
+                  </li1>
+               </ul1>
+            </div>
+         </div>
+         <div class="column1" style="background-color:white;">
+            <div style="display: inline-block; justify-content: center;">
+               <div class="row">
+                  <h1>DEMO MVP version 1</h1>
+                  <h2 style="text-align: center"><b>Check section: Demo for MVP</b></h2>
+                  <br>
+                  <h1>Check this: <a href="http://automated-testing.cf/login">Automated-testing.cf</a></h1>
+                  <h1>You can create a new account and test.</h1>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <h1>Demo for MVP</h1>
+      </section>
+      <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+                <h2><b>First page</b></h2>
+                <p class="aligncenter"><img src="img/First_Page.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+                <h2><b>My Test Plans</b></h2>
+                <p class="aligncenter"><img src="img/MyTestPlans.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+                <h2><b>My Test Steps</b></h2>
+                <p class="aligncenter"><img src="img/MyTestSteps.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <h2><b>Create / Edit Test Plan</b></h2>
+                  <p class="aligncenter"><img src="img/Create_Edit_TestPlan.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+                  <h2><b>Create / Edit Test Step</b></h2>
+                  <p class="aligncenter"><img src="img/Create_Edit_TestStep.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+        <section class="main-content">
+         <div class="row">
+            <div class="column1" style="background-color: #f7f7f7;">
+                <h2><b>Example Report Failed Test</b></h2>
+                <p class="aligncenter"><img src="img/Example_Report_Failed_Test.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+            </div>
+            <div class="column1" style="background-color:white;">
+               <div style="display: inline-block; justify-content: center;">
+                  <h2><b>Report Chart Runned Statistics</b></h2>
+                  <p class="aligncenter"><img src="img/Report_Chart_Runned_Statistics.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+                  <h2><b>Report Runned Tests</b></h2>
+                  <p class="aligncenter"><img src="img/Report_Runned_Tests.PNG" style="width: 100%; height: 100%;" alt="centered image" /></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="main-content">
+         <footer class="site-footer">
+            <span class="site-footer-owner"><a href="https://autotestframework.github.io/Fikipage_ATF/">ATF's FiKi</a> is maintained by <a href="https://github.com/AutoTestFramework">AutoTestFramework</a>.<span>
+            <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+         </footer>
+      </section>
+   </body>
+</html>
